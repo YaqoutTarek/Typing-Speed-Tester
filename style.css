@@ -1,0 +1,193 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 0.3s;
+}
+
+
+
+
+.game {
+    background-color: #D6D58E;
+    min-height: 100vh;
+}
+
+.name {
+    background-color: #042940;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #D6D58E;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: auto;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.message {
+    background-color:#9FC131 ;
+    border-radius: 10px;
+    padding: 10px;
+    color:#042940;
+}
+
+.message span {
+    color:#005C53 ;
+    font-weight: bold;
+}
+
+.message span::before {
+    content: "[ ";
+}
+
+.message span::after {
+    content: " ]";
+}
+
+.start {
+    background-color: #042940;
+    color: #D6D58E;
+    width: 50%;
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: #021019;
+    color: #eae9ae;
+    letter-spacing: 1px;
+}
+
+.the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: var(--main-color);
+    user-select: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #042940;
+}
+
+.input {
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #eae9ae;
+    outline: #021019 2px solid;
+    border-radius: 25px;
+    color: #D6D58E;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #042940;
+}
+
+.upcoming-words {
+    background-color: #9FC131;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    min-width: 60%;
+    max-width: 60%;
+    border-radius: 10px;
+}
+
+.upcoming-words div {
+    background-color: #042940;
+    color: #D6D58E;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 4px;
+}
+.control {
+    width: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #042940;
+    color: #D6D58E;
+    padding: 20px;
+}
+.control span {
+    font-weight: bold;
+    color: gold;
+}
+
+
+.finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+}
+
+.finish .good {
+    color: #042940;
+}
+
+.finish .bad {
+    color: red;
+}
+
+@keyframes Chang {
+    0% {
+        background-color: #042940;
+        border-radius: 20px;
+    }
+    50% {
+        background-color: #000000;
+        border-radius: 20px;
+    }
+} 
+.levels {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 10px;
+}
+.levels div {
+    width: 20%;
+    background-color: #042940;
+    color: #eae9ae;
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.levels div:hover {
+    color: #eae9ae;
+    letter-spacing: 1px;
+}
+#baby:hover {
+    background-color: #005C53;
+}
+#easy:hover {
+    background-color:forestgreen;
+}
+#normal:hover {
+    background-color:chocolate;
+}
+#hard:hover {
+    background-color:crimson;
+}
+#extreme:hover {
+    background-color: red;
+}
